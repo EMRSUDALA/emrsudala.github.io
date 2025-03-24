@@ -1,1 +1,107 @@
 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefae0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ccd5ae;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #d4a373;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#home { background-color: #e9edc9; }
+#about { background-color: #faedcd; }
+#academics { background-color: #d4a373; }
+#admissions { background-color: #ccd5ae; }
+#faculty { background-color: #e9edc9; }
+#facilities { background-color: #faedcd; }
+#gallery { background-color: #d4a373; }
+#contact { background-color: #ccd5ae; }
+
+/* Principal Section */
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.principal img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.principal p {
+    width: 50%;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #d4a373;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .principal img, .principal p {
+        width: 100%;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
